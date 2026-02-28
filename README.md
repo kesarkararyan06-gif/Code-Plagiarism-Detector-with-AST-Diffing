@@ -62,14 +62,14 @@ alice.py and bob.py implement the same bubble sort — with every variable renam
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
-| Core Parser | Python `ast` module | Parse source into AST |
-| Multi-language | `tree-sitter` (planned) | JS, Java, C support |
-| Algorithms | Custom (Jaccard + Winnowing) | Structural similarity |
-| Backend API | FastAPI | REST endpoints |
-| Frontend | HTML + CSS + Vanilla JS | Dashboard UI |
-| Visualization | D3.js | Similarity cluster graph |
+| Core Parser | Python `ast` module | Converts source code into Abstract Syntax Trees(AST) for structural analysis |
+| Multi-language | `tree-sitter` (planned) | Parse non-Python languages like Java, C, and JavaScript |
+| Algorithms | Custom (Jaccard + Winnowing) | Compute structural similarity between submissions |
+| Backend API | FastAPI | Provides REST API endpoints (upload files, run comparisons, fetch results) |
+| Frontend | HTML + CSS + Vanilla JS | Dashboard UI + Handling API calls, file uploads, and dynamic rendering |
+| Visualization | D3.js | Generates similarity cluster graphs and interactive visualizations |
 | Storage | SQLite | Result persistence |
-| Desktop wrapper | Electron.js (planned) | Cross-platform app |
+| Desktop wrapper | Electron.js (planned) | Wraps the web app into a cross-platform desktop application |
 
 ---
 
